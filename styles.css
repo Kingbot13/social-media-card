@@ -1,0 +1,80 @@
+body{
+    background-color: hsl(185, 75%, 39%);
+    margin: 20rem 25rem;
+    padding: 0;
+}
+
+
+.card{
+    height: 22rem;
+    width: 20.5rem;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5%;
+    border: 0;
+    padding: 0;
+}
+
+.card-bg{
+    background-size: cover;
+    background-image: url(images/bg-pattern-card.svg);
+    background-clip: border-box;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.top-circle{
+    position: absolute;
+    top: -30rem;
+    left: -10rem;
+}
+
+.bottom-circle{
+    position: absolute;
+    bottom: -25rem;
+    right: -10rem;
+}
+
+.container{
+    height: 50rem;
+    width: 75rem;
+    position: relative;
+    margin: auto;
+}
+
+/* .victor{
+    height: 6rem;
+    width: 6rem;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    bottom: 5rem;
+    border-style: solid;
+    border-color: #fff;
+    border: 2rem;
+    background-clip: content-box;
+    background-color: #fff;
+    background-image: url(images/image-victor.jpg);
+}
+ */
+#profile-pic{
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    position: relative;
+    bottom: 5rem;
+    border: .3rem;
+    border-style: solid;
+    border-color: #fff;
+    padding: 0;
+    display: block;
+    outline: none;
+    
+}

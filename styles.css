@@ -2,37 +2,56 @@ body{
     background-color: hsl(185, 75%, 39%);
     margin: 20rem 25rem;
     padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
 }
 
+hr{
+    width: 100%;
+    padding: 0%;
+}
 
+span{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    
+}
 .card{
-    height: 22rem;
-    width: 20.5rem;
+    height: 23.5rem;
+    width: 22rem;
     margin: auto;
     overflow: hidden;
     border-radius: 5%;
     border: 0;
     padding: 0;
+    box-shadow: 0 20px 60px -30px hsl(229, 23%, 23%);
 }
 
 .card-bg{
-    background-size: cover;
     background-image: url(images/bg-pattern-card.svg);
-    background-clip: border-box;
     position: relative;
 }
 
+/* wrapper for the text inside of the card */
 .container{
     margin-top: 20%;
     text-align: center;
     justify-content: center;
+    padding: 0;
 }
 
+/* alignment for the text */
 .row{
     text-align: center;
 }
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 15rem;
+
 }
 
 .attribution a { 
@@ -41,34 +60,25 @@ body{
 
 .top-circle{
     position: absolute;
-    top: -30rem;
-    left: -10rem;
+    top: -25rem;
+    left: -1rem;
 }
 
 .bottom-circle{
     position: absolute;
-    bottom: -25rem;
-    right: -10rem;
+    bottom: -35rem;
+    right: 1rem;
 }
 
-
-
-/* .victor{
-    height: 6rem;
-    width: 6rem;
-    background-repeat: no-repeat;
-    margin: auto;
-    border-radius: 50%;
-    position: relative;
-    bottom: 5rem;
-    border-style: solid;
-    border-color: #fff;
-    border: 2rem;
-    background-clip: content-box;
-    background-color: #fff;
-    background-image: url(images/image-victor.jpg);
+.city{
+    font-size: 14px;
 }
- */
+
+.stats span{
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
 #profile-pic{
     border-radius: 50%;
     height: 6rem;
@@ -79,7 +89,29 @@ body{
     border: .3rem;
     border-style: solid;
     border-color: #fff;
-    padding: 0;
-    display: block;
-    outline: none;
+}
+
+@media screen and (max-width: 400px) {
+
+    body{
+        margin: 0;
+        position: relative;
+    }
+    .card{
+        margin: auto;
+        position: absolute;
+        display: flex;
+        vertical-align: middle;
+        left: 12rem;
+    }
+
+    .top-circle{
+        position: absolute;
+        top: -32rem;
+        left: -38rem;
+    }
+    
+    .bottom-circle{
+        position: absolute;
+    }
 }
